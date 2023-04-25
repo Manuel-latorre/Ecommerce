@@ -24,6 +24,7 @@ function App() {
         <p>Hi, i´m the juleon27</p>
         <p>hi there, i'm using whatsapp</p>
         <p>anda?</p>
+        <h1>NEWELLS ALL BOYS</h1>
       </div>
     </div>
   );
