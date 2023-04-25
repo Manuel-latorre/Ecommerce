@@ -20,7 +20,7 @@ function App() {
       </header>
 
       <div>
-        <p>ola</p>
+        <p>Hi, i´m The Guiso</p>
       </div>
     </div>
   );
