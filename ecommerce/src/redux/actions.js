@@ -1,11 +1,16 @@
-import { GET_ALL, ADD_CART, DELETE_CART, FILTER } from "./action-types";
+import axios from 'axios'
+import { GET_PRODUCTS, GET_PRODUCT_DETAIL, DELETE_CART, FILTER } from "./action-types";
 
-export const getAll = (products) => {
-    return {type: GET_ALL, payload: products}
+
+export const getProducts = () => {
+    return async (dispatch) => {
+        const response = (await axios('https://fakestoreapi.com/products')).data;
+        return dispatch({type: GET_PRODUCTS, payload: response});
+    }
 }
 
-export const addCart = (product) => {
-    return {type: ADD_CART, payload: product}
+export const getProductDetail = (product) => {
+    return {type: GET_PRODUCT_DETAIL, payload: product}
 }
 
 export const deleteCart = (product) => {

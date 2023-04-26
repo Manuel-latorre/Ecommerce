@@ -1,27 +1,19 @@
-import { GET_ALL, ADD_CART, DELETE_CART, FILTER } from "./action-types";
+import { GET_PRODUCTS, GET_PRODUCT_DETAIL, DELETE_CART, FILTER } from "./action-types";
 
 const initialState = {
-    myCart: [],
-    allProducts: []
+    products: [],
+    product: {}
 }
 
 const reducer = (state = initialState, { type, payload }) => {
 
     switch( type ){
 
-        case GET_ALL:
+        case GET_PRODUCTS:
             return{
                 ...state,
-                
+                products: payload
             }
-
-
-
-
-
-
-
-
 
         default: 
         return{
@@ -30,11 +22,6 @@ const reducer = (state = initialState, { type, payload }) => {
     }
 
 
-
-
-
-
-
-
-
 }
+
+export default reducer;

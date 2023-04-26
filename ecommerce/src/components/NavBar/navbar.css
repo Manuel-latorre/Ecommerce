@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+nav{
+    background-color: black;
+}
+.logo-nav{
+    height: 150px;
+}
+#carrito path{
+    height: 300px;
+}
+.nav-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchBar{
+    padding: 8px;
+    width: 300px;
+    border: none;
+    color: rgb(141, 139, 139);
+    background: none;
+    outline: 0px;
+    border-bottom: 1px solid rgb(110, 110, 110);
+    transition: all .8s;
+    font-family: 'Vina Sans', cursive;
+    font-size: 20px;
+    
+}
+.searchBar:focus{
+    border-bottom: 1px solid white;
+    color: rgb(180, 240, 240);
+    font-size: 23px;
+    
+}
+.btn-search{
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    padding: 20px;
+}
+.cart{
+    margin-right: 20px;
+}
+.user{
+    margin-right: 20px;
+}

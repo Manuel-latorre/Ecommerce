@@ -1,4 +1,4 @@
-export const GET_ALL = 'GET_ALL'
-export const ADD_CART = 'ADD_CART'
+export const GET_PRODUCTS = 'GET_PRODUCTS'
+export const GET_PRODUCT_DETAIL = 'GET_PRODUCT_DETAIL'
 export const DELETE_CART = 'DELETE_CART'
 export const FILTER = 'FILTER'
