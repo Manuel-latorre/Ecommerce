@@ -46,9 +46,11 @@ nav{
     transition: all .2s;
     padding: 20px;
 }
-.cart{
-    margin-right: 20px;
+.icon-nav{
+    height: 50px;
+    padding: 20px;
+    
 }
-.user{
-    margin-right: 20px;
+.iconSearch{
+    height: 40px;
 }

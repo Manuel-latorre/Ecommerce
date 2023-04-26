@@ -1,8 +1,10 @@
 import "./navbar.css";
 import React from "react";
-import img from "./Diseno_sin_titulo-removebg-preview.png";
-import { FaCartPlus , FaSearch, FaUser } from "react-icons/fa";
+import img from "./img/Diseno_sin_titulo-removebg-preview.png";
+import cart from "./img/carritoBlanco.png"
+import user from "./img/usuarioBlanco.png"
 
+import SearchBar from "./SearchBar/SearchBar";
 
 const NavBar = () =>{
     return(
@@ -10,14 +12,11 @@ const NavBar = () =>{
             <div className="nav-up">
                 <img src={img} alt="" className="logo-nav" />
                 <div className="search-container">
-                <input type="text"  className="searchBar" placeholder="busca tu producto..."/>
-                <button className="btn-search">
-                <FaSearch style={{color: "white"}} size={"20px"}/> 
-                </button>
+                    <SearchBar/>
                 </div>
                 <div>
-                <FaCartPlus style={{color: "white"}} size={"45px"} className="cart"/> 
-                <FaUser style={{color: "white"}} size={"45px"} className="user"/> 
+                <img src={cart} alt=""  className="icon-nav"/>
+                <img src={user} alt=""  className="icon-nav"/>
                 </div>
             </div>
         </nav>
