@@ -12,7 +12,7 @@ const NavBar = () =>{
                 <div className="search-container">
                 <input type="text"  className="searchBar" placeholder="busca tu producto..."/>
                 <button className="btn-search">
-                {/* <FaSearch style={{color: "white"}} size={"20px"}/> */} 
+                <FaSearch style={{color: "white"}} size={"20px"}/> 
                 </button>
                 </div>
                 <div>
