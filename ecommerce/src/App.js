@@ -8,6 +8,7 @@ import Hombres from './components/Categorias/Hombres';
 import Mujeres from './components/Categorias/Mujeres';
 import Joyas from './components/Categorias/Joyas';
 import Electronica from './components/Categorias/Electronica';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path='/user' element={<User/>}/>
       <Route path='/' element={<Products />}/>
     </Routes>
+    <Footer/>
     </div>
   );
 }
