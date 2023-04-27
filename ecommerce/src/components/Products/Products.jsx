@@ -4,8 +4,6 @@ import { getProducts } from "../../redux/actions";
 import Product from '../Product/Product'
 import './Products.css'
 
-
-
 const Products = () => {
     const dispatch = useDispatch();
     const { products } = useSelector(state => state)
@@ -15,10 +13,12 @@ const Products = () => {
     }, []);
 
     return (
-        <div className="cards">
+        <div className="card ">
             {
                 products?.map(({id, title, price, image}) => {
                     return (
+                        <div className="cards">
+
                         <Product 
                         key={id}
                         id={id}
@@ -26,6 +26,7 @@ const Products = () => {
                         price={price}
                         image={image}
                         />
+                        </div>
                     )
 
                 })
