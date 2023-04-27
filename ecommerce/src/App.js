@@ -9,12 +9,14 @@ import Mujeres from './components/Categorias/Mujeres';
 import Joyas from './components/Categorias/Joyas';
 import Electronica from './components/Categorias/Electronica';
 import Footer from './components/Footer/Footer';
+import Carrusel from './components/Carrusel/Carrusel'
 
 function App() {
   return (
 
     <div>
       <NavBar/>
+      <Carrusel/>
     <Routes>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/hombres' element={<Hombres/>}/>
