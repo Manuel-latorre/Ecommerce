@@ -10,6 +10,7 @@ import Joyas from './components/Categorias/Joyas';
 import Electronica from './components/Categorias/Electronica';
 import Footer from './components/Footer/Footer';
 import Carrusel from './components/Carrusel/Carrusel'
+import Detail from './components/Detail/Detail';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path='/electronica' element={<Electronica/>}/>
       <Route path='/user' element={<User/>}/>
       <Route path='/' element={<Products />}/>
+      <Route path='/detail/:id' element={<Detail/>}/>
     </Routes>
     <Footer/>
     </div>

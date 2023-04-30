@@ -3,6 +3,7 @@ import './Product.css'
 import { addCart, deleteCart } from '../../redux/actions';
 import { getProducts } from '../../redux/actions';
 import { useDispatch, useSelector  } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Product = ({id, title, price, image}) => {
 
@@ -38,7 +39,7 @@ const Product = ({id, title, price, image}) => {
     return (
         <div className='cardsProducts'>
             <h3 className='titleCard'>{title}</h3>
-            <img className="imgCard" src={image} />
+            <Link to={`/detail/${id}`}><img className="imgCard" src={image} /></Link>
             <h3>{price}</h3>
             <button className='addToCart' onClick={handleCart}>🛒</button>
         </div>
