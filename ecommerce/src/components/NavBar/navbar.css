@@ -47,10 +47,38 @@ nav{
     padding: 20px;
 }
 .icon-nav{
-    height: 50px;
+    height: 65px;
     padding: 20px;
     
 }
 .iconSearch{
     height: 40px;
+}
+
+.buton-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.linkBtn {
+    display: flex;
+    color: white;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    transition: .6s;
+    margin: 15px;
+    font-family: 'Vina Sans', cursive;
+    height: fit-content;
+    width: fit-content;
+    font-size: 25px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 7%;
+}
+
+.linkBtn:hover {
+    background-color: rgb(99, 99, 99);
+    letter-spacing: 0.75px;
 }

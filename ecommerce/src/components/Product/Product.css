@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding:20px;
+    padding: 20px;
     margin: 10px;
     height: 500px;
     width: 300px;
@@ -19,4 +19,15 @@
 .titleCard{
     font-size: 16px;
     margin: 0;
+}
+
+.addToCart {
+    border-color:black;
+    border-radius: 30%;
+    transition: .3s;
+    width: 50px;
+}
+
+.addToCart:hover {
+    background-color:rgba(255, 196, 119, 0.476)
 }

@@ -2,6 +2,7 @@ import { GET_PRODUCTS, GET_PRODUCT_DETAIL, ADD_CART, DELETE_CART, FILTER } from 
 
 const initialState = {
     products: [],
+    cart:[],
     product: {}
 }
 
@@ -18,14 +19,14 @@ const reducer = (state = initialState, { type, payload }) => {
         case ADD_CART:
             return {
                 ...state,
-                product: payload,
-                products: payload
+                products: payload,
+                cart: payload
             }
 
         case DELETE_CART:
             return {
                 ...state,
-                products: payload
+                cart: payload
             }
 
         default: 

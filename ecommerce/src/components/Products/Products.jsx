@@ -17,10 +17,10 @@ const Products = () => {
             {
                 products?.map(({id, title, price, image}) => {
                     return (
-                        <div className="cards">
+                        <div key={id} className="cards">
 
                         <Product 
-                        key={id}
+                        
                         id={id}
                         title={title}
                         price={price}

@@ -30,11 +30,11 @@ const NavBar = () =>{
             </div>
         </nav>
             <div className="buton-container">
-           <NavLink to='/'><button>Home</button></NavLink>
-           <NavLink to='/hombres'><button>Hombres</button></NavLink>
-           <NavLink to='/mujeres'><button>Mujeres</button></NavLink>
-           <NavLink to='/electronica'><button>Electronica</button></NavLink>
-           <NavLink to='/joyas'><button>Joyas</button></NavLink>
+           <NavLink to='/'><button className="linkBtn">Home</button></NavLink>
+           <NavLink to='/hombres'><button className="linkBtn">Hombres</button></NavLink>
+           <NavLink to='/mujeres'><button className="linkBtn">Mujeres</button></NavLink>
+           <NavLink to='/electronica'><button className="linkBtn">Electronica</button></NavLink>
+           <NavLink to='/joyas'><button className="linkBtn">Joyas</button></NavLink>
             </div>
         </>
     )

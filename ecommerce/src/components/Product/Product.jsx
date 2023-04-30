@@ -1,17 +1,18 @@
 import { useEffect, useState } from 'react';
 import './Product.css'
-import { addCart } from '../../redux/actions';
+import { addCart, deleteCart } from '../../redux/actions';
 import { getProducts } from '../../redux/actions';
 import { useDispatch, useSelector  } from 'react-redux';
 
-const Product = ({id, title, price, image, deleteCart}) => {
+const Product = ({id, title, price, image}) => {
 
     const dispatch = useDispatch();
-    const { products } = useSelector(state => state)
+    const { cart } = useSelector(state => state)
 
     useEffect(() => {
         dispatch(getProducts())
-    }, [])
+    }, [cart])
+  
 
     const [isCart, setIsCart] = useState(false)
 
@@ -22,24 +23,24 @@ const Product = ({id, title, price, image, deleteCart}) => {
         }
         else {
             setIsCart(true)
-            addCart({id, title, image})
+            addCart({id, title, image, price})
         }
     }
 
     useEffect(() => {
-        products.forEach((prod) => {
+        cart.forEach((prod) => {
             if(prod.id === id) {
                 setIsCart(true)
             }
         })
-    }, [products])
+    }, [])
 
     return (
         <div className='cardsProducts'>
             <h3 className='titleCard'>{title}</h3>
             <img className="imgCard" src={image} />
             <h3>{price}</h3>
-            <button>🛒</button>
+            <button className='addToCart' onClick={handleCart}>🛒</button>
         </div>
     )
 }
